@@ -2,12 +2,6 @@ openmm>=7.7
 pdbfixer
 mpi4py
 openmmforcefields
-torch
-torch-cluster
-torch-scatter
-torch-sparse
-torch-spline-conv
-torch-geometric
 pymol
 yapf==0.32.0
 addict==2.4.0
@@ -38,8 +32,6 @@ pandarallel==1.6.3
 spyrmsd==0.5.2
 tensorboardX
 tensorboard
-torchmetrics
-torchtyping
 typeguard
 gpustat
 dm-tree
