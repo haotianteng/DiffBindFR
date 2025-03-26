@@ -28,10 +28,10 @@ This is the official repository for the DiffBindFR, which is the accurate diffus
 ## Installation (Linux)  <a name="installation"></a>
 All Python dependencies are specified in [`env.yaml`](env.yaml). This package is currently supported for CUDA 11.7 and pytorch 1.13.1. You can change the dependencies by modifying the corresponding CUDA and pytoch version, also pytorch-geometric packages, in [`env.yaml`](env.yaml), to match your local CUDA configuration. 
 
-Firstly, clone the repo, e.g.
+Firstly, clone the repo from our forked repository, e.g.
 
 ```shell
-git clone https://github.com/HBioquant/DiffBindFR.git
+git clone https://github.com/haotianteng/DiffBindFR.git
 ```
 
 Then, set up a conda environment in the project directory, and run the command
@@ -39,6 +39,8 @@ Then, set up a conda environment in the project directory, and run the command
 ```shell
 conda env create -f env.yaml
 conda activate diffbindfr
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+pip install -e .
 ```
 
 Finally, **add permission to executable file**
